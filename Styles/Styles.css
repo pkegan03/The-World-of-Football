@@ -1,0 +1,132 @@
+
+.center-headings h2,
+.center-headings h3,
+.center-headings h4,
+.center-headings h5,
+.center-headings h6 {
+    text-align: center;
+}
+
+body{
+    background-color: rgb(247, 209, 185);
+    color: rgb(9, 73, 6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+li{ font-weight:  normal;
+}
+
+ul{font-size: 20px;
+    color: black;
+}
+
+ol{
+    font-size: 20px;
+    color: black;
+}
+
+a{
+    font-size: 20px;
+    color: brown;
+}
+
+.bold{font-weight: bold;}
+
+
+.center {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box-model {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px 10px;
+    padding: 15px 20px;
+    margin: 20px auto;  
+    display: block;
+}
+
+#relative-box {
+    position: relative;              /* relative example */
+    border: 3px solid darkgreen;
+    padding: 15px;
+    margin: 30px auto;
+    width: 60%;
+    background-color: rgb(230, 250, 230);
+}
+
+/* This box will sit on the page normally but is positioned
+   a little bit from the top and left inside its own area. */
+#absolute-box {
+    position: absolute;              /* absolute example */
+    top: 250px;
+    left: 40px;
+    border: 3px dashed brown;
+    padding: 10px;
+    width: 220px;
+    background-color: rgb(255, 240, 210);
+    font-size: 16px;
+}
+
+/* This box stays fixed on the screen even when you scroll. */
+#fixed-box {
+    position: fixed;                 /* fixed example */
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: rgb(255, 255, 200);
+    font-size: 16px;}
+
+
+
+    /* ===== Layout Page Styles ===== */
+
+#layout-header {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Left menu on the left side */
+#left-menu {
+    float: left;
+    width: 20%;
+    background-color: rgb(230, 240, 230);
+    border: 2px solid darkgreen;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Right menu on the right side */
+#right-menu {
+    float: right;
+    width: 20%;
+    background-color: rgb(240, 230, 230);
+    border: 2px solid darkred;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Middle content between the menus */
+#layout-main {
+    margin-left: 22%;   /* a bit more than left-menu width */
+    margin-right: 22%;  /* a bit more than right-menu width */
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Clear both floats so the footer sits underneath */
+#layout-footer {
+    clear: both;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+}
